@@ -9,9 +9,9 @@ export default function App() {
     <div className="App">
       <nav className="navbar">
         <Logo />
-        
+
         {/* Write your code : 
-          - if the user is not logged in : render a button that says "login"
+          - if the user is not logged in : render a button that says "login" yang ini sepertinya pakai &&
 
           - if the user is logged in :
             render a button that says logout and
