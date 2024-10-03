@@ -15,3 +15,11 @@ body {
   border: lightgray 1px solid;
   background-color: white;
 }
+
+
+.welcome-message p {
+  font-size: 30pt; 
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
