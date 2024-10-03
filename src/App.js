@@ -10,18 +10,22 @@ export default function App() {
       <nav className="navbar">
         <Logo />
 
-        {/* Write your code : 
-          - if the user is not logged in : render a button that says "login" yang ini sepertinya pakai &&
+        {/* Render a button that says "login" if the user is not logged in */}
+        {!user && <button>Login</button>}
 
-          - if the user is logged in :
-            render a button that says logout and
-              - if the user has a username : render a greeting message with the username "Welcome username !" pake ? sebagai if : sebagai else
-              - if the user does not have a user name : render "Logged and Please complete your username!""
-
-        */}
+        {/* If the user is logged in */}
+        {user && (
+          <>
+            <button>Logout</button>
+            {/* Check if the user has a username */}
+            <p>
+              {user.username
+                ? `Welcome ${user.username}!`
+                : "Logged in, please complete your username!"}
+            </p>
+          </>
+        )}
       </nav>
-
-
     </div>
   );
 }
